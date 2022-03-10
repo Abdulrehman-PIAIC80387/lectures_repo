@@ -1,0 +1,54 @@
+thisdict = {
+  "cough": "syrup",
+  "cold": "erinac",
+  "acid": "h2so4",
+  "acid 2": 6172,
+   1212:"4121"
+}
+
+
+print(thisdict["cold"])
+
+print(thisdict.keys())
+
+
+print(thisdict.values())
+
+newdict={}
+newdict=thisdict.copy()
+print(newdict)
+
+
+newdict["new"]="now added"
+print(newdict)
+
+
+newdict["new"]="now  change"
+print(newdict)
+
+
+
+newdict.pop("cold")
+print(thisdict)
+
+for x in newdict.keys():
+    print(x)
+
+for x in newdict.values():
+    print(x)
+
+
+newdictnexted = {
+  "person1" : {"name" : "smit","year" : 2004},
+  "person2" : {"name" : "Tob","year" : 2007},
+  "person3" : {"name" : "Linux","year" : 2011}
+}
+
+
+print(newdictnexted)
+
+for x in newdictnexted:
+  # display
+    print(newdictnexted[x].values())
+
+
